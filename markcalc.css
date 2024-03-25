@@ -1,0 +1,174 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #e5e5f7;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 62.5px 62.5px, linear-gradient(#45f7f3 5px, transparent 5px) 0 -2.5px, linear-gradient(90deg, #45f7f3 5px, #e5e5f7 5px) -2.5px 0;
+    background-size: 125px 125px, 125px 125px, 62.5px 62.5px, 62.5px 62.5px;
+}
+.container{
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.container h1{
+   font-family:Galada;
+   font-size: 40px;
+   background: rgba(255, 255, 0, 0.644);
+   padding: 5px;
+   border-radius: 20px;
+   color: rgb(238, 134, 130);
+   filter: blur(2px);
+   transition: 0.3s;
+   user-select: none;
+   animation: pulse 2s infinite;
+   text-align: center;
+   width: fit-content;
+   height: fit-content;
+}
+.container h1:hover{
+    filter: blur(0);
+    transition: 0.3s;
+}
+input[type="number"] {
+    width: 100%; /* Adjust the width as needed */
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: cyan;
+    background-color: rgba(236, 239, 240, 0.842);
+    animation: pulse 3s infinite;
+}
+form {
+    width: 30%; /* Adjust the form width as needed */
+    height: 40%;
+    margin: auto;
+}
+label{
+    color: rgb(15, 105, 4);
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.589);
+    border-radius: 10px;
+    border-style: outset;
+    display: inline-block;
+    text-align: center;
+}
+#result{
+    background: rgba(128, 128, 128, 0.637);
+    width: fit-content;
+    height: fit-content;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 20px;
+    filter: blur(5px);
+    transition: 0.3s;
+    margin: 20px auto;
+    padding: 6px;
+    animation: pulse 3s infinite;
+}
+#result:hover{
+    filter: blur(0);
+    transition: 0.3s;
+}
+.imgcontainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: 0;
+    z-index: -1;
+}
+.imgcontainer .img1{
+    width: 200px;
+    padding: 10px;
+    opacity: 0.8;
+}
+.imgcontainer .img2{
+    width: 175px;
+    padding: 20px;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+.imgcontainer .img3{
+    width: 200px;
+    padding: 20px;
+    opacity: 0.8;
+}
+#calculateButton {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#calculateButton:hover {
+    background-color: #45a049;
+}
+#calculateButton:focus {
+    outline: none;
+    box-shadow: 0 0 10px #719ECE;
+}
+.footer{
+    background-color: #4594b363; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    border-radius: 20px;
+}
+.fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 2px;
+ }
+ 
+ .fa:hover {
+   opacity: 0.7;
+ }
+ 
+ .fa-facebook {
+   background: #3B5998;
+   color: white;
+   border-radius: 20px;
+ }
+ 
+ .fa-twitter {
+   background: #55ACEE;
+   color: white;
+   border-radius: 20px;
+ }
+ 
+ .fa-instagram {
+   background: #e4405f;
+   color: white;
+   border-radius: 20px;
+ }
+
+@keyframes pulse{
+    0%,100%{ transform: scale(1);}
+    50%{ transform: scale(1.1);}
+  }
+  @keyframes pulse1{
+    0%,100%{ transform: scale(1);}
+    50%{ transform: scale(1.1);}
+  }
+@font-face {
+    font-family: Galada ;
+    src: url(fonts/Galada-Regular.ttf);
+}
