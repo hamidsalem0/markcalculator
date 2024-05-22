@@ -147,7 +147,7 @@ body{
     width: 250px;
     height: 150px;
     opacity: 0.9;
-    top: 500px;
+    top: 750px;
     margin-right: 60%;
     z-index: 1;
     
@@ -157,7 +157,7 @@ body{
     width: 175px;
     margin-left: 60%;
     opacity: 0.8;
-    top: 470px;
+    top: 720px;
     border-radius: 100px 100px;
 }
 .container .img3{
